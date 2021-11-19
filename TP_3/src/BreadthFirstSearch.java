@@ -23,5 +23,4 @@ public class BreadthFirstSearch {
         }
         return randomArcTree;
     }
-
 }
