@@ -9,7 +9,6 @@ public class BreadthFirstSearch {
         ArrayList<Integer> file = new ArrayList<>();
         file.add(s);
         marquage.add(s);
-        int i=0;
         while (file.size() != 0){
             int e = file.get(0);
             file.remove(0);
@@ -19,7 +18,6 @@ public class BreadthFirstSearch {
                 file.add(g.outNeighbours(e).get(j).getDest());
                 marquage.add(g.outNeighbours(e).get(j).getDest());}
             }
-            i++;
         }
         return randomArcTree;
     }

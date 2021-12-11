@@ -19,7 +19,7 @@ public class MainStub {
 
         // Non-random BFS
         ArrayList<Arc> randomArcTree =
-                Aldous_Broder.generateTree(graph,0);
+                BreadthFirstSearch.generateTree(graph,0);
         randomTree = new ArrayList<>();
         for (Arc a : randomArcTree) randomTree.add(a.support);
 
